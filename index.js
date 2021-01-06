@@ -8,8 +8,8 @@ const moment = require('moment-timezone')
 moment.tz.setDefault('Asia/Jakarta').locale('id')
 
 const start = async () => {
-    const browser = await puppeteer.launch()
-    const page = await browser.newPage();
+    const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] })
+    const page = await browser.newPage()
 
     console.log(`[...] Sedang membuka halaman login`)
     await page.goto(`${process.env.MOODLE_BASEURL}/${process.env.ATTENDANCE_PATH}`, {
