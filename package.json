@@ -1,0 +1,33 @@
+{
+    "name": "moodle-auto-attendance",
+    "version": "1.0.0",
+    "description": "presensi otomatis untuk moodle",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/sProDev/moodle-auto-attendance.git"
+    },
+    "keywords": [
+        "moodle",
+        "auto",
+        "attendance",
+        "absensi",
+        "presensi"
+    ],
+    "author": "sProDev",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/sProDev/moodle-auto-attendance/issues"
+    },
+    "homepage": "https://github.com/sProDev/moodle-auto-attendance#readme",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "moment-timezone": "^0.5.32",
+        "puppeteer": "^5.5.0",
+        "telegram-notify": "^1.3.2"
+    }
+}
