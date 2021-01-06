@@ -46,8 +46,8 @@ Make sure all the necessary dependencies are installed: https://github.com/puppe
 
 Fix Stuck on linux, install google chrome stable: 
 ```bash
-$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-$ sudo apt install ./google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
 ### Additional Information
