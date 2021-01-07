@@ -34,13 +34,13 @@ Use crontab to run command periodically
 - Crontab every day (at 07.30)
   
   ```
-  30 7 * * * <user> node /path/index.js
+  30 7 * * * node /path/index.js
   ```
 
 - Crontab every day except Saturday & Sunday (at 07.30)
   
   ```
-  30 7 * * 1,2,3,4,5 <user> node /path/index.js
+  30 7 * * 1,2,3,4,5 node /path/index.js
   ```
 
 Manual command
@@ -52,13 +52,6 @@ node /path/index.js
 ## Troubleshooting
 
 Make sure all the necessary dependencies are installed: https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md
-
-Fix Stuck on linux, install google chrome stable: 
-
-```bash
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
-```
 
 ## Additional Information
 
