@@ -1,8 +1,10 @@
 require('dotenv').config({ path: __dirname + '/.env' })
 const puppeteer = require('puppeteer')
 
-const Telegram = require('telegram-notify')
-let notify = new Telegram({ token: process.env.TELEGRAM_TOKEN, chatId: process.env.CHAT_ID })
+if (process.env.TELEGRAM_TOKEN && process.env.CHAT_ID) {
+    const Telegram = require('telegram-notify')
+    let notify = new Telegram({ token: process.env.TELEGRAM_TOKEN, chatId: process.env.CHAT_ID })
+}
 
 const moment = require('moment-timezone')
 moment.tz.setDefault('Asia/Jakarta').locale('id')
@@ -67,14 +69,18 @@ const start = async () => {
                                     return document.querySelector('.alert.alert-info')
                                 })
                             ]).then(() => {
-                                let message = `Laporan Presensi Elearning\n\nAkun: ${name}\nTanggal : ${moment().format('DD MMMM YYYY HH:mm')}\nPesan: Berhasil Menghadiri Presensi`
-                                notify.send(message)
+                                if (process.env.TELEGRAM_TOKEN && process.env.CHAT_ID) {
+                                    let message = `Laporan Presensi Elearning\n\nAkun: ${name}\nTanggal : ${moment().format('DD MMMM YYYY HH:mm')}\nPesan: Berhasil Menghadiri Presensi`
+                                    notify.send(message)
+                                }
 
                                 console.log('[ + ] Sukses menghadiri presensi')
                                 resolve()
                             }).catch(() => {
-                                let message = `Laporan Presensi Elearning\n\nAkun: ${name}\nTanggal : ${moment().format('DD MMMM YYYY HH:mm')}\nPesan: Gagal Menghadiri Presensi`
-                                notify.send(message)
+                                if (process.env.TELEGRAM_TOKEN && process.env.CHAT_ID) {
+                                    let message = `Laporan Presensi Elearning\n\nAkun: ${name}\nTanggal : ${moment().format('DD MMMM YYYY HH:mm')}\nPesan: Gagal Menghadiri Presensi`
+                                    notify.send(message)
+                                }
 
                                 console.log('[ x ] Gagal menghadiri presensi')
                                 resolve()
