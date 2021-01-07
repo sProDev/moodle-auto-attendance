@@ -26,18 +26,18 @@ Automatically attendance for Moodle - Learning Management System
 
 Use crontab to run command periodically
 
-- Crontab every day
+- Crontab every day (at 07.30)
   ```
-  0 0 * * * <user> node ./index.js
+  30 7 * * * <user> node /path/index.js
   ```
-- Crontab every day except Saturday & Sunday
+- Crontab every day except Saturday & Sunday (at 07.30)
   ```
-  0 0 * * 1,2,3,4,5 <user> node /path/index.js
+  30 7 * * 1,2,3,4,5 <user> node /path/index.js
   ```
 
 Manual command
 ```bash
-node ./index.js
+node /path/index.js
 ```
 
 ### Troubleshooting
