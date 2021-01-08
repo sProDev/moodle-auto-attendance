@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/sProDev/moodle-auto-attendance.git"
+        "url": "git+https://github.com/sProDev/moodle-auto-attendance.git"
     },
     "keywords": [
         "moodle",
@@ -19,7 +19,7 @@
         "presensi"
     ],
     "author": "sProDev",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/sProDev/moodle-auto-attendance/issues"
     },
