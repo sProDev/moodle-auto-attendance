@@ -1,7 +1,7 @@
 require('dotenv').config({ path: __dirname + '/.env' })
 const puppeteer = require('puppeteer')
 
-if (process.env.TELEGRAM_TOKEN && process.env.CHAT_ID) {
+if ((process.env.TELEGRAM_TOKEN) && (process.env.CHAT_ID)) {
     const Telegram = require('telegram-notify')
     let notify = new Telegram({ token: process.env.TELEGRAM_TOKEN, chatId: process.env.CHAT_ID })
 }
@@ -69,7 +69,7 @@ const start = async () => {
                                     return document.querySelector('.alert.alert-info')
                                 })
                             ]).then(() => {
-                                if (process.env.TELEGRAM_TOKEN && process.env.CHAT_ID) {
+                                if ((process.env.TELEGRAM_TOKEN) && (process.env.CHAT_ID)) {
                                     let message = `Laporan Presensi Elearning\n\nAkun: ${name}\nTanggal : ${moment().format('DD MMMM YYYY HH:mm')}\nPesan: Berhasil Menghadiri Presensi`
                                     notify.send(message)
                                 }
@@ -77,7 +77,7 @@ const start = async () => {
                                 console.log('[ + ] Sukses menghadiri presensi')
                                 resolve()
                             }).catch(() => {
-                                if (process.env.TELEGRAM_TOKEN && process.env.CHAT_ID) {
+                                if ((process.env.TELEGRAM_TOKEN) && (process.env.CHAT_ID)) {
                                     let message = `Laporan Presensi Elearning\n\nAkun: ${name}\nTanggal : ${moment().format('DD MMMM YYYY HH:mm')}\nPesan: Gagal Menghadiri Presensi`
                                     notify.send(message)
                                 }
