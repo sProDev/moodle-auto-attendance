@@ -12,14 +12,12 @@ Automatically attendance for Moodle - Learning Management System
 ### Installation
 
 1. Clone this repository
-   
    ```bash
    git clone https://github.com/sProDev/moodle-auto-attendance.git
    cd moodle-auto-attendance
    ```
 
 2. Install the dependencies
-   
    ```bash
    npm i --save
    ```
@@ -32,21 +30,19 @@ Automatically attendance for Moodle - Learning Management System
 Use crontab to run command periodically
 
 - Crontab every day (at 07.30)
-  
   ```
-  30 7 * * * node /path/index.js
+  30 7 * * * node /path/src/start.js
   ```
 
 - Crontab every day except Saturday & Sunday (at 07.30)
-  
   ```
-  30 7 * * 1,2,3,4,5 node /path/index.js
+  30 7 * * 1,2,3,4,5 node /path/src/start.js
   ```
 
 Manual command
 
 ```bash
-node /path/index.js
+node ./src/start.js
 ```
 
 ## Troubleshooting
@@ -63,4 +59,4 @@ This project is also inspired by [@zFz0000](https://github.com/zFz0000/MoodleAut
 
 ### License
 
-[MIT](https://github.com/sProDev/moodle-auto-attendance/blob/main/LICENSE)
+Code licensed under [Apache 2.0 License](https://github.com/sProDev/moodle-auto-attendance/blob/main/LICENSE)
