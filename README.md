@@ -13,7 +13,7 @@ Automatically attendance for Moodle - Learning Management System
 
 1. Clone this repository
    ```bash
-   git clone https://github.com/sProDev/moodle-auto-attendance.git
+   git clone https://github.com/sooluh/moodle-auto-attendance.git
    cd moodle-auto-attendance
    ```
 
@@ -59,4 +59,4 @@ This project is also inspired by [@zFz0000](https://github.com/zFz0000/MoodleAut
 
 ### License
 
-Code licensed under [Apache 2.0 License](https://github.com/sProDev/moodle-auto-attendance/blob/main/LICENSE)
+Code licensed under [Apache 2.0 License](https://github.com/sooluh/moodle-auto-attendance/blob/main/LICENSE)

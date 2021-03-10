@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sProDev/moodle-auto-attendance.git"
+        "url": "git+https://github.com/sooluh/moodle-auto-attendance.git"
     },
     "keywords": [
         "moodle",
@@ -17,12 +17,12 @@
         "absensi",
         "presensi"
     ],
-    "author": "sProDev",
+    "author": "sooluh",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/sProDev/moodle-auto-attendance/issues"
+        "url": "https://github.com/sooluh/moodle-auto-attendance/issues"
     },
-    "homepage": "https://github.com/sProDev/moodle-auto-attendance#readme",
+    "homepage": "https://github.com/sooluh/moodle-auto-attendance#readme",
     "dependencies": {
         "dotenv": "^8.2.0",
         "moment-timezone": "^0.5.33",
