@@ -26,7 +26,7 @@
     "dependencies": {
         "dotenv": "^8.2.0",
         "moment-timezone": "^0.5.33",
-        "puppeteer": "^9.1.0",
+        "puppeteer": "^9.1.1",
         "telegram-notify": "^1.3.2"
     }
 }
