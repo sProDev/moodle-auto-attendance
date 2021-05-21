@@ -24,7 +24,7 @@
     },
     "homepage": "https://github.com/sooluh/moodle-auto-attendance#readme",
     "dependencies": {
-        "dotenv": "^9.0.2",
+        "dotenv": "^10.0.0",
         "moment-timezone": "^0.5.33",
         "puppeteer": "^9.1.1",
         "telegram-notify": "^1.3.2"
